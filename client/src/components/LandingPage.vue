@@ -5,7 +5,7 @@
             <p>Únete a la lucha por salvar a estas especies en peligro</p>
         </div>
         <div class="img-container">
-
+            <img src="https://github.com/JosafatJimenezB/HacktTheOcean-Hackaton/blob/main/assets/tortuga-carey.png" alt="">
         </div>
     </div>
 </template>
@@ -20,4 +20,22 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;;
     }
+
+    .text-container{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-container h1{
+        font-size: 4rem;
+    }
+
+    .text-container p{
+        font-size: 1.5rem;
+    }
+
+
 </style>
