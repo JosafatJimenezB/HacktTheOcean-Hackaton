@@ -16,6 +16,32 @@
   box-sizing: border-box;
 }
 
+
+::-webkit-scrollbar{
+  width: 11px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+  width: 100%;
+  background: #4D5DFB;
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #313fb9;
+}
+
+::selection{
+  background-color: #4D5DFB;
+  color: #fff;
+}
+
+
+
+
+
+
 body{
   margin: 0;
   padding: 0;
