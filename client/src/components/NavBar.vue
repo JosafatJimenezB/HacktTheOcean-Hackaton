@@ -19,7 +19,14 @@
         margin: 0 auto;
     }
 
+    .navbar.scrolled{
+        background-color: var(--bg-color-transparent);
+        box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(20px);
+    }
+
     .logo{
         color: #fff;
     }
+
 </style>
