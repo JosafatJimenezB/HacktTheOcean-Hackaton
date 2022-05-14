@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install modules
       run: |
-        cd backend
+        cd Backend
         yarn
     - name: Run tests
       run: yarn test
