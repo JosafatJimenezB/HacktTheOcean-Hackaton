@@ -8,8 +8,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install modules
-      run: cd backend
-      run: yarn
+      run: |
+        cd backend
+        yarn
     - name: Run tests
       run: yarn test
       
