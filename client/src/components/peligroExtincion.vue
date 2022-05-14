@@ -1,3 +1,4 @@
+
 <template>
     <div class="container">
         <h2>Especies que se encuentran en peligro</h2>
@@ -7,7 +8,21 @@
                     Hechos tales como la pesca incontrolada, la acidificación del agua, la gran contaminación que sufren los mares y océanos, y el cambio climático, del cual, somos los principales responsables, está teniendo como consecuencia que numerosas especies marinas se encuentren en peligro de extinción.</p>
             </div>
             <div class="carrusel">
-                <h2>soy el carrusel</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -44,3 +59,6 @@
     }
     
 </style>
+
+
+
