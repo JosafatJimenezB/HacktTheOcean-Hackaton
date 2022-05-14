@@ -8,7 +8,7 @@ const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 app.get('/', (req, res) => {
-  res.json({message: 'Hackaton!'});
+  res.json({message: 'alive'});
 });
 
 app.listen(port, () => {

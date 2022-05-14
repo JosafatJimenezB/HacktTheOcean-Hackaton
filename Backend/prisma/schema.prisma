@@ -9,3 +9,33 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model especie {
+  id Int @id @default(autoincrement())
+  especie String @db.VarChar(128)
+  nombreCientifico String @db.VarChar(128)
+  familia String @db.VarChar(128)
+  biologo_id biologo @relation(fields: [biologoId], references: [id])
+  dateCreated DateTime @default(now())
+  lastUpdated DateTime @updatedAt
+}
+
+model biologo {
+  id Int @id @default(autoincrement())
+  nombre String @db.VarChar(128)
+  organizacion String @db.VarChar(128)
+  especialidad String @db.VarChar(128)
+  pais String @db.VarChar(128)  
+  dateCreated DateTime @default(now())
+  lastUpdated DateTime @updatedAt
+}
+
+model ubicaciones {
+  id Int @id @default(autoincrement())
+  coordenadas Float @default(0.000)
+  ph Float @default(0.000)
+  especie_id especie @relation(fields: [especieId], references: [id])
+  biologo_id biologo @relation(fields: [biologoId], references: [id])
+  dateCreated DateTime @default(now())
+  lastUpdated DateTime @updatedAt
+}
