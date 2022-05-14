@@ -4,7 +4,7 @@
 
 ## Preservacion de especies maritimas en peligro de extincion
 
-# Metas
+## Metas
 
 - Detectar avistamientos.
 - Detencion de especies
