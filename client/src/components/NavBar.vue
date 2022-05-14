@@ -26,4 +26,8 @@
         justify-content: space-between;
         margin: 0 auto;
     }
+
+    .logo{
+        color: #fff;
+    }
 </style>
