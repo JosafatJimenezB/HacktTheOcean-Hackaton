@@ -15,8 +15,6 @@
     .container{
         width: 100%;
         height: calc(100vh - 60px);
-        background: rgb(77,93,251);
-        background: linear-gradient(45deg, rgba(77,93,251,1) 0%, rgba(8,200,246,1) 49%, rgba(77,93,251,1) 100%);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0 50px;
