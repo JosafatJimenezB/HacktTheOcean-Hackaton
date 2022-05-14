@@ -9,7 +9,7 @@
             <img src="../assets/tortuga-carey.png" alt="">
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,149.3C384,181,480,203,576,181.3C672,160,768,96,864,74.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        <p>Menos del 3% del océano esta protegido.<br> Necesitamos al menos el 30% para <br>salvaguardar la biodiversidad.</p>
+        <b>Menos del 3% del océano esta protegido.<br> Necesitamos al menos el 30% para <br>salvaguardar la biodiversidad.</b>
     </div>
 </template>
 
@@ -25,10 +25,10 @@
         position: relative;
     }
 
-    .container p{
+    .container b{
         position: absolute;
-        bottom: 1rem;
-        right: 1.4rem;
+        bottom: 2rem;
+        right: 2rem;
         font-size: 2rem;  
         text-align: end;
         color: #89D4CF;
