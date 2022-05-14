@@ -42,34 +42,33 @@
 ```mermaid
  classDiagram
       class Especie{
-          + id
-          + especie(charfield)
-          + ubicacion(charfield)
-          + pais(fk)
-          + estado(fk)
-          + municipio(fk)
+          + id (Int)
+          + especie(varchar(128))
+          + nombreCientifico(varchar(128))
+          + familia(varchar(128))
+          + biologo_id(fk)
+          + dateCreated (DateTime now())
+          + lastUpdated (DateTime)
       }
       class Biologo{
           + id
-          + nombre(charfield)
-          + origen(charfield)
+          + nombre(varchar(128))
+          + organizacion(varchar(128))
           + especialidad(charfield)
+          + pais(varchar(128))
+          + dateCreated (DateTime now())
+          + lastUpdated (DateTime)
       }
       class Ubicaciones{
           + id
-          + fecha(datetimefield)
-          + coordenadas(char)
-          + biologo(fk)
-          + especie(fk)
+          + coordenadas (varchar(255))
+          + ph(Float)
+          + especie_id(fk)
+          + biologo_id(fk)
+          + dateCreated (DateTime now())
+          + lastUpdated (DateTime)
       }
-      class Habitad{
-          + id
-          + ph_agua(integerfield)
-          + nivel_pesca(ChoicesField)
-          + coordenadas(char)
-          + biologo(fk)
-          + especie(fk)
-      }
+      
 ```
 
 ## Actualizaciones
