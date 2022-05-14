@@ -10,5 +10,12 @@
 </template>
 
 <style scoped>
-
+    .navbar{
+        /* background: red; */
+        max-width: 1280px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
 </style>
