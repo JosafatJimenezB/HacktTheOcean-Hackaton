@@ -8,6 +8,8 @@
         <div class="img-container">
             <img src="../assets/tortuga-carey.png" alt="">
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,149.3C384,181,480,203,576,181.3C672,160,768,96,864,74.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <b>Menos del 3% del océano esta protegido.<br> Necesitamos al menos el 30% para <br>salvaguardar la biodiversidad.</b>
     </div>
 </template>
 
@@ -15,13 +17,29 @@
     .container{
         width: 100%;
         height: calc(100vh - 60px);
-        background: rgb(77,93,251);
-        background: linear-gradient(45deg, rgba(77,93,251,1) 0%, rgba(8,200,246,1) 49%, rgba(77,93,251,1) 100%);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0 50px;
         gap: 1rem;;
         box-sizing: border-box;
+        position: relative;
+    }
+
+    .container b{
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        font-size: 2rem;  
+        text-align: end;
+        color: #89D4CF;
+        text-shadow: 0px 0px 10px #89D4CF;
+    }
+
+    svg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 
     .text-container{
@@ -56,9 +74,7 @@
     }
 
     .img-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 150px 0 0;
     }
 
     .img-container img{
