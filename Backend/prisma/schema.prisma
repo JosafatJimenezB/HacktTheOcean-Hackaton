@@ -10,32 +10,38 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model especie {
-  id Int @id @default(autoincrement())
-  especie String @db.VarChar(128)
-  nombreCientifico String @db.VarChar(128)
-  familia String @db.VarChar(128)
-  biologo_id biologo @relation(fields: [biologoId], references: [id])
-  dateCreated DateTime @default(now())
-  lastUpdated DateTime @updatedAt
+model Biologo {
+  id           Int           @id @default(autoincrement())
+  nombre       String        @db.VarChar(128)
+  organizacion String        @db.VarChar(128)
+  especialidad String        @db.VarChar(128)
+  pais         String        @db.VarChar(128)
+  dateCreated  DateTime      @default(now())
+  lastUpdated  DateTime      @updatedAt
+  Especie      Especie[]
+  Ubicaciones  Ubicaciones[]
 }
 
-model biologo {
-  id Int @id @default(autoincrement())
-  nombre String @db.VarChar(128)
-  organizacion String @db.VarChar(128)
-  especialidad String @db.VarChar(128)
-  pais String @db.VarChar(128)  
-  dateCreated DateTime @default(now())
-  lastUpdated DateTime @updatedAt
+model Especie {
+  id               Int           @id @default(autoincrement())
+  especie          String        @db.VarChar(128)
+  nombreCientifico String        @db.VarChar(128)
+  familia          String        @db.VarChar(128)
+  biologo          Biologo       @relation(fields: [biologoId], references: [id])
+  biologoId        Int
+  dateCreated      DateTime      @default(now())
+  lastUpdated      DateTime      @updatedAt
+  Ubicaciones      Ubicaciones[]
 }
 
-model ubicaciones {
-  id Int @id @default(autoincrement())
-  coordenadas Float @default(0.000)
-  ph Float @default(0.000)
-  especie_id especie @relation(fields: [especieId], references: [id])
-  biologo_id biologo @relation(fields: [biologoId], references: [id])
+model Ubicaciones {
+  id          Int      @id @default(autoincrement())
+  coordenadas Float    @default(0.000)
+  ph          Float    @default(0.000)
+  especie     Especie  @relation(fields: [especieId], references: [id])
+  especieId   Int
+  biologo     Biologo  @relation(fields: [biologoId], references: [id])
+  biologoId   Int
   dateCreated DateTime @default(now())
   lastUpdated DateTime @updatedAt
 }
