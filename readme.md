@@ -1,38 +1,44 @@
-# HackTheOcean
+![](./assets/header.png)
 
-# Preservacion de especies maritimas en peligro de extincion
+# HackTheOcean :turtle:
+
+## Preservacion de especies maritimas en peligro de extincion
 
 # Metas
-* Detectar avistamientos.
-* Detencion de especies
-* Captura de Ubicacion
-* Captura de calidad de habitad
+
+- Detectar avistamientos.
+- Detencion de especies
+- Captura de Ubicacion
+- Captura de calidad de habitad
 
 ## Front End
-* Landing page.
-* Imagenes de especies en peligro de extincion.
-* Informacion sobre la pezca.
-* Causa de muerte
-* Soluciones
-* Publicidad
-* Donaciones
-* Organizaciones que apoyan a la causa
-* Mapa especies
-* Mockups
+
+- Landing page.
+- Imagenes de especies en peligro de extincion.
+- Informacion sobre la pezca.
+- Causa de muerte
+- Soluciones
+- Publicidad
+- Donaciones
+- Organizaciones que apoyan a la causa
+- Mapa especies
+- Mockups
 
 ## Backend
-* CRUD.
-* Base de datos.
-* API's.
-* Pruebas de unidad.
-* Dependencias.
-* Tecnologias(NodeJS).
 
+- CRUD.
+- Base de datos.
+- API's.
+- Pruebas de unidad.
+- Dependencias.
+- Tecnologias(NodeJS).
 
 ## Herramientas
-* Base de datos: PostgresSql
+
+- Base de datos: PostgresSql
 
 # Tablas
+
 ```mermaid
  classDiagram
       class Especie{
@@ -67,5 +73,6 @@
 ```
 
 ## Actualizaciones
-* Idioma ingles
-* Otras Especies no marinas
+
+- Idioma ingles
+- Otras Especies no marinas
