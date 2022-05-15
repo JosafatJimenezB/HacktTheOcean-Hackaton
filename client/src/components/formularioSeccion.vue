@@ -4,7 +4,7 @@
             <img src="../assets/ballena-azul.png" alt="">
         </div>
         <div class="form-section_right">
-            <h3>Registro</h3>
+            <h3>Registra un avistamiento</h3>
             <form action="#">
                 <div>
                     <label for="">Especie:</label>
@@ -70,7 +70,7 @@
 .form-section_right h3 {
     margin-bottom: 30px;
     color: #fff;
-    font-size: 5.5rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
