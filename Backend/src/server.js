@@ -22,6 +22,15 @@ app.get('/', (req, res) => {
   res.json({message: 'alive'});
 });
 
-app.listen(port, () => {
-  console.log(`Listening to requests on port ${port}`);
-});
+
+
+
+
+
+
+var server = app.listen(port, () => {console.log(`Listening to requests on port ${port}`);});
+var handler = function() {
+    console.log('close server');
+    server.close();
+};
+module.exports = {app, handler};
