@@ -16,71 +16,76 @@
                        <p>Vaquita Marina</p>
                    </div>
                </div>
-               <div class="slide">
-                   <img src="../assets/Delfín-maui.jpg" alt="">
-                   <div class="info">
-                       <h3>#02</h3>
-                       <p>El delfín de Maui</p>
-                   </div>
-               </div>
-               <div class="slide">
-                   <img src="../assets/Foca-monje.jpg" alt="">
-                   <div class="info">
-                       <h3>#03</h3>
-                       <p>Foca monje</p>
-                   </div>
-               </div>
-               <div class="slide">
-                   <img src="../assets/Pepinos-de-mar-300x200.jpg" alt="">
-                   <div class="info">
-                       <h3>#04</h3>
-                       <p>Pepinos de mar</p>
-                   </div>
-               </div>
-               <div class="slide">
-                   <img src="../assets/Anguila-europea-300x200.jpg" alt="">
-                   <div class="info">
-                       <h3>#05</h3>
-                       <p>Anguila eruropea</p>
-                   </div>
-               </div>
-               <div class="slide">
-                   <img src="../assets/Nacra-300x200.jpg" alt="">
-                   <div class="info">
-                       <h3>#06</h3>
-                       <p>Nacra</p>
-                   </div>
-               </div>
-               <div class="slide">
-                   <img src="../assets/ballena-gris-300x200.jpg" alt="">
-                   <div class="info">
-                       <h3>#07</h3>
-                       <p>Ballena gris</p>
-                   </div>
-               </div>
-               <div class="slide">
-                   <img src="../assets/tortuga-laúd-300x200.jpg" alt="">
-                   <div class="info">
-                       <h3>#08</h3>
-                       <p>Tortuga Laúd</p>
-                   </div>
-               </div>
-               <div class="slide">
-                   <img src="../assets/pez-guitarra-300x200.jpg" alt="">
-                   <div class="info">
-                       <h3>#09</h3>
-                       <p>Pez guitarra</p>
-                   </div>
-               </div>
-               <div class="slide">
-                   <img src="../assets/Rorcual-común-2-300x200.jpg" alt="">
-                   <div class="info">
-                       <h3>#10</h3>
-                       <p>Rorcual común</p>
-                   </div>
-               </div>
             </div>
         </div>
+        <details>
+                    <summary>Ver Más Imagenes</summary>
+                    <div class="container-cards">
+                        <div class="card">
+                            <img src="../assets/Delfín-maui.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#02</h3>
+                           <p>El delfín de Maui</p>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/Foca-monje.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#03</h3>
+                                <p>Foca monje</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/Pepinos-de-mar-300x200.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#04</h3>
+                                <p>Pepinos de mar</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/Anguila-europea-300x200.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#05</h3>
+                                <p>Anguila eruropea</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/Nacra-300x200.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#06</h3>
+                                <p>Nacra</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/ballena-gris-300x200.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#07</h3>
+                                <p>Ballena gris</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/tortuga-laúd-300x200.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#08</h3>
+                                <p>Tortuga Laúd</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/pez-guitarra-300x200.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#09</h3>
+                                <p>Pez guitarra</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/Rorcual-común-2-300x200.jpg" alt="">
+                            <div class="card-info">
+                                <h3>#10</h3>
+                                <p>Rorcual común</p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
     </div>
 </template>
 
@@ -135,6 +140,47 @@
     .slide img{
         width: 100%;
         height: 100%;
+    }
+
+
+    details{
+        margin-top: 30px;
+    }
+
+
+
+    .container-cards{
+        width: 100%;
+        max-width: 1280px;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 0 50px;
+    }
+
+    .card{
+        position: relative;
+        width: 100%;
+    }
+
+    .card-info{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 10;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(20px);
+        border-radius: 5px;
+        padding: 10px;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     
 </style>
