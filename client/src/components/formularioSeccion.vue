@@ -50,6 +50,8 @@
     radial-gradient(at 72% 67%, hsla(191,93%,49%,1) 0px, transparent 50%);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 50px 0;
 }
 
 .form-section_left{
@@ -58,7 +60,7 @@
 }
 
 .form-section_right {
-    width: 35%;
+    width: 100%;
     height: 95%;
     display: flex;
     flex-direction: column;
@@ -75,19 +77,21 @@
 .form-section_right form {
     width: 100%;
     height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 .form-section_right div {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
 }
 .form-section_right label {
     color: #fff;
     font-size: 1.6rem;
+    text-align: start;
     font-weight: 700;
 }
 .form-section_right input {
@@ -95,17 +99,24 @@
     height: 22px;
     margin: 5px 0 15px;
     border-radius: 5px;
+    outline: none;
 }
+
 .form-section_right button {
-    width: 130px;
-    height: 30px;
-    margin-bottom: 40px;
-    background-color: rgba(255, 255, 255, .3);
+    margin-top: 50px;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, .3);
+    font-size: 1rem;
     color: #fff;
     outline: none;
     border-radius: 5px;
     border: none;
     box-shadow: 0px 4px 8px 0px #59491E29;
+    cursor: pointer;
+    transition: background .3s ease-out;
 }
 
+.form-section_right button:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
 </style>
