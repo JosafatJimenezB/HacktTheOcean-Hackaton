@@ -152,7 +152,7 @@
     .container-cards{
         width: 100%;
         max-width: 1280px;
-        margin: 30px auto;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
