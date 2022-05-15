@@ -14,6 +14,7 @@
   background: rgb(77,93,251);
   background: linear-gradient(45deg, rgba(77,93,251,1) 0%, rgba(8,200,246,1) 49%, rgba(77,93,251,1) 100%);
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 
 
@@ -39,7 +40,9 @@
 
 
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 body{

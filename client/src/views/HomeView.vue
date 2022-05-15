@@ -3,6 +3,7 @@
   <landing />
   <peligro />
   <formulario />
+  <letter />
 </template>
 
 <script>
@@ -11,6 +12,7 @@
 import landing from '../components/LandingPage.vue'
 import peligro from '../components/peligroExtincion.vue'
 import formulario from '../components/formularioSeccion.vue'
+import letter from '../components/contactoSeccion.vue'
 
 export default {
   name: 'HomeView',
@@ -18,6 +20,7 @@ export default {
     landing,
     peligro,
     formulario,
+    letter,
   }
 }
 </script>
