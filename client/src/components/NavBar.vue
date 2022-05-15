@@ -1,6 +1,7 @@
 <template>
     <div class="navbar">
         <div class="logo">
+            <img src="../assets/logoV1.png" alt="">
         </div>
         <nav>
             <router-link class="nav-item" to="/">Home</router-link>
@@ -11,7 +12,7 @@
 <style scoped>
     .navbar{
         max-width: 1280px;
-        height: 60px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -24,8 +25,9 @@
         backdrop-filter: blur(20px);
     }
 
-    .logo{
-        color: #fff;
+    .logo img{
+        padding-top: 10px;
+        height: 50px;
     }
 
 </style>
